@@ -3,7 +3,7 @@ this repo is a poc for learning elk
 
 - there are some prerequisites for this to run in local, minikube and kubectl
 
-# Setting up Minikube
+# Setting Up Minikube
 **Minikube** is a tool that creates a **local Kubernetes cluster** on your machine, ideal for development and testing. Follow these steps to set up Minikube and prepare it for deploying RabbitMQ.
 
 - On macOS
@@ -29,3 +29,22 @@ this repo is a poc for learning elk
 
     2. Install Minikube:
     > sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+# Seting Up kubectl
+**kubectl** is the command-line tool for interacting with your Kubernetes cluster.
+
+1. Install kubectl:
+
+- On macOS:
+> brew install kubectl
+ 
+- On Windows:
+> choco install kubernetes-cli
+
+- On Linux:
+> curl -LO "https://dl.k8s.io/release/v1.27.1/bin/linux/amd64/kubectl" chmod +x ./kubectl sudo mv ./kubectl /usr/local/bin/kubectl
+
+2. Verify kubectl Configuration:
+> kubectl config use-context minikube kubectl get nodes
+
+Ensure that kubectl is configured to use your Minikube cluster and that it can communicate with the cluster.
