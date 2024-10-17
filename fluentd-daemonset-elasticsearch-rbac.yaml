@@ -33,13 +33,13 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: fluentd
-  namespace: tasks-poc
+  namespace: chinsiang-testing
 ---
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
   name: fluentd
-  namespace: tasks-poc
+  namespace: chinsiang-testing
   labels:
     k8s-app: fluentd-logging
     version: v1
