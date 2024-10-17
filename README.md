@@ -48,3 +48,15 @@ this repo is a poc for learning elk
 > kubectl config use-context minikube kubectl get nodes
 
 Ensure that kubectl is configured to use your Minikube cluster and that it can communicate with the cluster.
+
+# Start Minikube
+1. Start Minikube:
+> minikube start
+
+You can **specify the driver** to use for virtualization (e.g., Docker, VirtualBox) with the --driver flag. For example, to use **Docker**:
+> minikube start --driver=docker
+
+2. Verify Minikube Status:
+> minikube status
+
+Ensure that Minikube is **running** and the Kubernetes components are up.
